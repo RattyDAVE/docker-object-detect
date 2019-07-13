@@ -2,6 +2,10 @@
 
 ##docker run -it --name camera_go -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --device /dev/video0 tensorflow/tensorflow:latest-py3 bash
 
+##xhost +
+##docker exec -it camera_go bash
+
+
 apt update -y
 apt install -y git protobuf-compiler wget python3-opencv python-opencv python3-matplotlib
 
