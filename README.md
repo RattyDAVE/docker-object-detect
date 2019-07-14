@@ -1,9 +1,9 @@
-# Object Detection on Raspberry Pi 4/3
+# Object Detection
 
 The purpose is to get the object detection and proof of concept working in the minimum time.
 
 Ethos:
-- We use pre-compiled binaries where possible from the Raspberry Pi repository.
+- We use pre-compiled binaries where possible.
 - The python code contains the minimal needed to be functional. 
 
 #### Defaults
@@ -21,7 +21,7 @@ docker run -it /
            -e DISPLAY=$DISPLAY /
            -v /tmp/.X11-unix:/tmp/.X11-unix /
            --device /dev/video0 /
-           tensorflow/tensorflow:latest-py3
+           RattyDAVE/docker-object-detect:latest
 ```
 
 ### To start the object detetection run the following
@@ -69,7 +69,7 @@ The default is ssdlite_mobilenet_v2_coco_2018_05_09.
 - mask_rcnn_resnet101_atrous_coco_2018_01_28
 - mask_rcnn_resnet50_atrous_coco_2018_01_28
 
-#### Kitti-trained models from [Kitti dataset](http://www.cvlibs.net/datasets/kitti/)
+#### Kitti-trained models from [Kitti dataset](http://www.cvlibs.net/datasets/kitti/) - NOT TESTED
 - faster_rcnn_resnet101_kitti_2018_01_28
 
 #### Open Images-trained models from [Open Images dataset](https://github.com/openimages/dataset)- NOT TESTED
@@ -80,10 +80,10 @@ The default is ssdlite_mobilenet_v2_coco_2018_05_09.
 - ssd_mobilenet_v2_oid_v4_2018_12_12
 - ssd_resnet101_v1_fpn_shared_box_predictor_oid_512x512_sync_2019_01_20
 
-#### iNaturalist Species-trained models from [iNaturalist Species Detection Dataset](https://github.com/visipedia/inat_comp/blob/master/2017/README.md#bounding-boxes)
+#### iNaturalist Species-trained models from [iNaturalist Species Detection Dataset](https://github.com/visipedia/inat_comp/blob/master/2017/README.md#bounding-boxes) - NOT TESTED
 - faster_rcnn_resnet101_fgvc_2018_07_19
 - faster_rcnn_resnet50_fgvc_2018_07_19
 
-#### AVA v2.1 trained models from [AVA v2.1 dataset](https://research.google.com/ava/)
+#### AVA v2.1 trained models from [AVA v2.1 dataset](https://research.google.com/ava/) - NOT TESTED
 AVA is a project that provides audiovisual annotations of video for improving our understanding of human activity.
 - faster_rcnn_resnet101_ava_v2.1_2018_04_30
