@@ -22,6 +22,10 @@ RUN apt update -y && \
   echo "cd ~/tensorflow1/models/research/object_detection"  >> /root/startup.sh && \
   echo "export PYTHONPATH=$PYTHONPATH:~/tensorflow1/models/research:~/tensorflow1/models/research/slim"  >> /root/startup.sh && \
   echo "python3 camera_on.py" >> /root/startup.sh && \
-  chmod 755 /root/startup.sh
+  chmod 755 /root/startup.sh && \
+  cd /root && \
+  wget https://raw.githubusercontent.com/RattyDAVE/docker-object-detect/master/download.sh  && \
+  chmod 755 /root/download.sh
+  
 
 CMD ["/bin/bash", "/root/startup.sh"]
