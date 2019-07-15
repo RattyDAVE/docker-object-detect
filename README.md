@@ -33,7 +33,7 @@ docker exec -it camera_go /root/startup.sh
 ### To change the object detetection model
 - start up the container with ```docker exec -it camera_go bash```
 - edit ```/root/download.sh``` and uncomment the download line.
-- edit ```/~/tensorflow1/models/research/object_detection/obj-config.ini``` to change to the right model.
+- edit ```~/tensorflow1/models/research/object_detection/obj-config.ini``` to change to the right model.
 - run ```/root/startup.sh``` to start the detection.
 
 ## Models
