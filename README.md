@@ -83,7 +83,7 @@ Size   |Model | Status rpi4| FPS rpi4
 #### Open Images-trained models from [Open Images dataset](https://github.com/openimages/dataset)
 601 Classes
 
-Size   |Model | Status | FPS 4
+Size   |Model | Status rpi4| FPS 4
   --- | --- | --- | ---
 680MB|faster_rcnn_inception_resnet_v2_atrous_oid_2018_01_28
 680MB|faster_rcnn_inception_resnet_v2_atrous_lowproposals_oid_2018_01_28
