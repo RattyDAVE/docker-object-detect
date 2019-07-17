@@ -16,12 +16,12 @@ This uses pretrained models and can has the ability to change the model easy usi
 ### To install run the following.
 ```
 xhost +
-docker run -it /
-           --name camera_go /
-           -e DISPLAY=$DISPLAY /
-           -v /tmp/.X11-unix:/tmp/.X11-unix /
-           --device /dev/video0 /
-           RattyDAVE/docker-object-detect:latest
+docker run -it \
+           --name camera_go \
+           -e DISPLAY=$DISPLAY \
+           -v /tmp/.X11-unix:/tmp/.X11-unix \
+           --device /dev/video0 \
+           rattydave/ai-object-detect:latest
 ```
 
 ### To start the object detetection run the following
