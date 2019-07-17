@@ -27,7 +27,7 @@ docker run -it \
 ### To start the object detetection run the following
 ```
 xhost +
-docker exec -it camera_go /root/startup.sh
+docker start -i camera_go
 ```
 
 ### To change the object detetection model
