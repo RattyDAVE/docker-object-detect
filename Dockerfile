@@ -1,5 +1,5 @@
 #FROM tensorflow/tensorflow:latest-py3
-FROM tensorflow/tensorflow:nightly-py3 
+FROM tensorflow/tensorflow:1.15.0-py3 
 
 ENV DEBIAN_FRONTEND noninteractive
 
