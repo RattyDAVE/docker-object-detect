@@ -20,10 +20,11 @@ RUN apt update -y && \
   echo "python3 camera_on.py" >> /root/startup.sh && \
   chmod 755 /root/startup.sh && \
   cd /root && \
-  wget https://raw.githubusercontent.com/RattyDAVE/docker-object-detect/master/download.sh  && \
+  #wget https://raw.githubusercontent.com/RattyDAVE/docker-object-detect/master/download.sh  && \
   chmod 755 /root/download.sh
   
 ADD camera_on.py ~/tensorflow1/models/research/object_detection
 ADD obj-config.ini ~/tensorflow1/models/research/object_detection
+ADD download.sh ~
 
 CMD ["/bin/bash", "/root/startup.sh"]
