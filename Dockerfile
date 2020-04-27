@@ -29,8 +29,8 @@ RUN echo "#!/bin/bash" > /root/startup.sh && \
 
 ADD camera_on.py ~/tensorflow1/models/research/object_detection
 ADD obj-config.ini ~/tensorflow1/models/research/object_detection
-ADD download.sh ~/download.sh
+ADD download.sh ~/tensorflow1/models/research/object_detection
 
-RUN chmod 755 ~/download.sh
+RUN chmod 755 ~/tensorflow1/models/research/object_detection/download.sh
 
 CMD ["/bin/bash", "/root/startup.sh"]
