@@ -31,6 +31,6 @@ ADD camera_on.py ~/tensorflow1/models/research/object_detection
 ADD obj-config.ini ~/tensorflow1/models/research/object_detection
 ADD download.sh ~/download.sh
 
-RUN chmod 755 /root/download.sh
+RUN chmod 755 ~/download.sh
 
 CMD ["/bin/bash", "/root/startup.sh"]
