@@ -27,9 +27,9 @@ RUN echo "#!/bin/bash" > /root/startup.sh && \
   echo "python3 camera_on.py" >> /root/startup.sh && \
   chmod 755 /root/startup.sh
 
-ADD camera_on.py ~/tensorflow1/models/research/object_detection
-ADD obj-config.ini ~/tensorflow1/models/research/object_detection
-ADD download.sh ~/tensorflow1/models/research/object_detection
+ADD camera_on.py /root/tensorflow1/models/research/object_detection
+ADD obj-config.ini /root/tensorflow1/models/research/object_detection
+ADD download.sh /root/tensorflow1/models/research/object_detection
 
 # RUN chmod 755 ~/tensorflow1/models/research/object_detection/download.sh
 
