@@ -30,6 +30,17 @@ xhost +
 docker start -i camera_go
 ```
 
+### Auto Update
+
+To automatically update I recomend using watchtower.
+
+```
+docker run -d \
+  --name watchtower \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  v2tec/watchtower 
+```
+
 ### To change the object detetection model
 - start up the container with ```docker exec -it camera_go bash```
 - edit ```/root/download.sh``` and uncomment the download line.
